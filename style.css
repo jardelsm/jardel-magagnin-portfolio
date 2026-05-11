@@ -1,0 +1,163 @@
+/* =============================================
+   Portfólio - Jardel Scremin Magagnin
+   Arquivo de estilos (style.css)
+   ============================================= */
+
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tema escuro - aplicado pelo JavaScript quando o usuário clicar no botão */
+body.escuro {
+  background-color: #222;
+  color: #eee;
+}
+
+/* Menu de navegação */
+nav {
+  background-color: #005b99;
+  padding: 10px 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Links do menu */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Efeito ao passar o mouse nos links */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Botão de tema no menu */
+nav button {
+  margin-left: auto;
+  padding: 5px 12px;
+  background-color: white;
+  color: #005b99;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+nav button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Área principal de conteúdo */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Títulos */
+h1 {
+  color: #005b99;
+}
+
+h2 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Tema escuro - ajuste dos títulos */
+body.escuro h1 {
+  color: #66b2ff;
+}
+
+body.escuro h2 {
+  color: #ccc;
+}
+
+body.escuro nav {
+  background-color: #003d6b;
+}
+
+/* Linha divisória */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Links comuns */
+a {
+  color: #005b99;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body.escuro a {
+  color: #66b2ff;
+}
+
+/* Campos do formulário */
+input[type="text"],
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+body.escuro input[type="text"],
+body.escuro textarea {
+  background-color: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+/* Botão de envio do formulário */
+button {
+  padding: 8px 20px;
+  background-color: #005b99;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #004077;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* Rodapé */
+footer {
+  background-color: #005b99;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+body.escuro footer {
+  background-color: #003d6b;
+}

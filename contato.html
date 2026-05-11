@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Jardel Scremin Magagnin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <nav>
+    <a href="index.html">Sobre mim</a>
+    <a href="formacao.html">Formação</a>
+    <a href="portfolio.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+    <button id="btnTema" onclick="alternarTema()">🌙 Tema escuro</button>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Contato</h1>
+    <p>Preencha o formulário abaixo para entrar em contato comigo.</p>
+
+    <hr>
+
+    <!-- Informações de contato -->
+    <h2>Informações</h2>
+    <ul>
+      <li><strong>E-mail:</strong> jardelmagagnin@gmail.com</li>
+      <li><strong>Localização:</strong> Santa Catarina, Brasil</li>
+      <li><strong>Instituição:</strong> SMS - Prefeitura Municipal de São José (SC)</li>
+    </ul>
+
+    <hr>
+
+    <!-- Formulário de contato -->
+    <!-- A validação e o envio são feitos pelo JavaScript no arquivo script.js -->
+    <h2>Envie uma mensagem</h2>
+
+    <div id="formulario">
+
+      <label for="nome">Nome completo:</label><br>
+      <input type="text" id="nome" placeholder="Digite seu nome"><br>
+      <!-- Espaço onde aparece a mensagem de erro do campo nome -->
+      <span id="erroNome" style="color: red;"></span>
+
+      <br><br>
+
+      <label for="email">E-mail:</label><br>
+      <input type="text" id="email" placeholder="Digite seu e-mail"><br>
+      <!-- Espaço onde aparece a mensagem de erro do campo e-mail -->
+      <span id="erroEmail" style="color: red;"></span>
+
+      <br><br>
+
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem"></textarea><br>
+      <!-- Espaço onde aparece a mensagem de erro do campo mensagem -->
+      <span id="erroMensagem" style="color: red;"></span>
+
+      <br><br>
+
+      <!-- Botão chama a função validarFormulario() do script.js -->
+      <button onclick="validarFormulario()">Enviar mensagem</button>
+
+    </div>
+
+    <!-- Mensagem de sucesso - fica oculta até o formulário ser enviado -->
+    <div id="mensagemSucesso" style="display: none;">
+      <h3>✅ Mensagem enviada com sucesso!</h3>
+      <p>Obrigado pelo contato! Responderei em breve.</p>
+      <button onclick="novasMensagem()">Enviar outra mensagem</button>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Jardel Scremin Magagnin | RU: 5491393</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
